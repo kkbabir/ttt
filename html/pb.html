@@ -1,0 +1,85 @@
+<!doctype html>
+    <html>
+		<head>
+		                 <meta charset="utf-8">
+						 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                         <meta name="viewport" content="width=device-width, initial-scale=1">
+					     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			        <title>payment</title>
+			    	     <link rel="stylesheet" href="css/bootstrap.min.css">
+						 <link rel="stylesheet" href="css/bootstrap.css">
+						 <link rel="stylesheet" href="css/pb.css">
+						 <link rel="stylesheet" href="fonts/font-awesome.min.css">
+					
+		</head>
+		<body>
+		    <div class="container">
+			    <center><h1>||Profile Builder||</h1></center>
+				<div class="ex">
+					<!--	<div class="col-md-3">
+							<div class="thumbnail">
+							  <img src="MYXJ_20170315153307_save.jpg" alt="..." width="500px" height="00px;">
+							    <div class="caption">
+									<h4><a>Name :</a>&nbsp; KKB ABIR</h4>
+									<h5>Batch :&nbsp; 9Th</h5>
+									<h5>ID :&nbsp; 11708031</h5>
+									<h5>District :&nbsp; Noakhali</h5>
+									
+									<h5>Email :&nbsp; KKbabir68@gmail.com</h5>
+									<h5>Mobile :&nbsp; 01872419625</h5>
+									<h5>Job Title :&nbsp; Web It</h5>
+							    </div>
+							</div>
+						</div>-->
+						</div>
+			</div>
+		
+			</html>
+		     
+		
+			<script>
+			 var under=document.querySelector(".ex");
+		function prb(){
+			 var profileb={
+        imgg:localStorage.getItem("pic"),
+				name:localStorage.getItem("name"),
+				btch:localStorage.getItem("batch"),
+				idd:localStorage.getItem("id"),
+				dist:localStorage.getItem("dis"),
+				mail:localStorage.getItem("email"),
+				phn:localStorage.getItem("mobile"),
+				jobb:localStorage.getItem("job")
+			 }
+			    const profilefor= profileform(profileb);
+					under.innerHTML +=profilefor;
+
+					}
+					prb();
+function profileform({imgg,name ,btch,idd,dist,mail,phn,jobb}){
+   return `
+			 <div class="col-md-3">
+							<div class="thumbnail">
+							  <img src="${imgg}" alt="..." width="500px" height="00px;">
+							    <div class="caption">
+									<h4><a>Name :</a>&nbsp; ${name}</h4>
+									<h5>Batch :&nbsp; ${btch}Th</h5>
+									<h5>ID :&nbsp; ${idd}</h5>
+									<h5>District :&nbsp; ${dist}</h5>
+									<h5>Email :&nbsp; ${mail}</h5>
+									<h5>Mobile :&nbsp; ${phn}</h5>
+									<h5>Job Title :&nbsp; ${jobb}</h5>
+							    </div>
+							</div>
+						</div>
+			 `
+	window.location.href = "pbid.html";	
+
+}
+
+			</script>
+		
+			
+		            <script src="js/bootstrap.js"></script>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+		</body>

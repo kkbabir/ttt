@@ -1,0 +1,163 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!doctype html>
+            
+    <html>
+		<head>
+		                
+						 <link rel="stylesheet" href="css/pb.css">
+						 
+					
+		</head>
+		<body>
+		     <center> <div>
+			   <h1>Please Enter The Password </h1>
+					
+					
+						  <form id="xx"  onsubmit="te()" action="pb.html" name="myform" method="post" onsubmit="return take();">
+		      <table>
+                
+		           
+					 <br>
+					
+					 <br>
+				   <tr>
+				        <td></td>
+								<script>
+									function previewFile(){
+											var preview = document.querySelector('img'); //selects the query named img
+											var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+											var reader  = new FileReader();
+							 
+											reader.onloadend = function () {
+													preview.src = reader.result;
+											}
+							 
+											if (file) {
+													reader.readAsDataURL(file); //reads the data as a URL
+											} else {
+													preview.src = "";
+											}
+								 }
+							 
+								 previewFile();  //calls the function named previewFile()
+								 </script>
+						 <td>
+							<input type="file" onchange="previewFile()"><br>
+							<img id="pic" src="" height="200" alt="Image preview...">
+					    </td>
+					</tr>
+				   <tr>
+				        <td>Name :</td>
+						 <td>
+						  <input type="text"  style="text-transform: capitalize;" id="name" name="nme" value=""/> <br>
+					    </td>
+					</tr>
+				
+				      <tr>
+				      <td>Batch :</td>
+						 <td>
+							 <input  type="text" id="batch" name="bth" value=""/>  <br>
+							</span>
+					     </td>
+					</tr>
+					 <tr>
+				      <td>ID :</td>
+						 <td>
+							 <input  type="text" id="id" name="id" value=""/>  <br>
+							</span>
+					     </td>
+					</tr>
+					
+					 <tr>
+				        <td>District :</td>
+						 <td>
+						  <input type="text" id="dis" style="text-transform: capitalize;" value="" name="dis"/> <br>
+					    </td>
+					</tr>
+					  <tr>
+				        <td>Email :</td>
+						 <td>
+						     <input type="text"  id="email" name="email" value=""/> <br>
+						 </td>
+					</tr>
+					 <tr>
+				      <td>Mobile :</td>
+						 <td>
+							 <input  type="text" id="mobile" name="phone" value="+880"/>  <br>
+							</span>
+					     </td>
+					</tr>
+					
+					 <tr>
+				        <td>Job Title :</td>
+						 <td>
+						  <input type="text" style="text-transform: capitalize;" id="job" name="job" value=""/> <br>
+					    </td>
+					</tr>
+				      <tr>
+				
+					<td style="position:absolute;margin:48px 0px 0px 32px;">
+					    <button type="reset" class="butt" name="refresh" value="">Refresh</button>
+						<button class="button" name="submit" value="" style="vertical-align:middle">Submit</button>
+
+				  </td>
+				  </tr>
+				  <tr>   
+				    <td style="position:absolute;margin-left:0px;" id="show"></td>
+			<br>
+			    <td style="position:absolute;margin-left:200px;" id="tes"></td>
+				</tr>
+			  </table>
+			
+		   </form>
+					
+		</div>
+		
+		</center>
+		<script>
+					
+function te() {
+var image=document.getElementById("pic").src;
+   localStorage.setItem("pic",image);
+var name=document.getElementById("name").value;
+   localStorage.setItem("name",name);
+var batch=document.getElementById("batch").value; 
+   localStorage.setItem("batch",batch);
+ var id=document.getElementById("id").value;
+   localStorage.setItem("id",id);
+var district=document.getElementById("dis").value; 
+   localStorage.setItem("dis",district);
+ var email=document.getElementById("email").value;
+   localStorage.setItem("email",email);
+var mobile=document.getElementById("mobile").value; 
+   localStorage.setItem("mobile",mobile);
+ var job=document.getElementById("job").value; 
+   localStorage.setItem("job",job);
+ 
+ return false;
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}					</script>
+				
+					<script src="js/pbid.js"></script>
+					
+		</body>

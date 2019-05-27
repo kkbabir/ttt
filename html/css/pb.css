@@ -1,0 +1,18 @@
+@font-face {
+						font-family:AvenirLTStd-Roman;
+						src: url("fonts/AvenirLTStd-Roman.otf") format("opentype");
+					}
+
+					body{
+						font-family:AvenirLTStd-Roman;
+					    background:#EDEEF2;
+											}
+			a{
+				 color:#62C7F6;
+				  text-decoration:block;
+			}
+			a:hover{
+				 color:#62C7F6;
+				 
+				 text-decoration:none;
+			}
